@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/reminderListFragment">
+
+    <fragment
+        android:id="@+id/reminderListFragment"
+        android:name="com.allexandresantos.locationreminders.reminders.reminderslist.ReminderListFragment"
+        tools:layout="@layout/fragment_reminders"
+        android:label="ReminderListFragment">
+        <action
+            android:id="@+id/to_create_reminder"
+            app:destination="@id/createReminderFragment" />
+        <action
+            android:id="@+id/to_detail_activity"
+            app:destination="@id/reminderDetailActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createReminderFragment"
+        android:name="com.allexandresantos.locationreminders.reminders.createreminder.CreateReminderFragment"
+        tools:layout="@layout/fragment_create_reminder"
+        android:label="Add Reminder">
+        <action
+            android:id="@+id/action_createReminderFragment_to_reminderListFragment"
+            app:destination="@id/reminderListFragment" />
+        <action
+            android:id="@+id/action_createReminderFragment_to_selectLocationFragment"
+            app:destination="@id/selectLocationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectLocationFragment"
+        android:name="com.allexandresantos.locationreminders.reminders.createreminder.selectreminderlocation.SelectLocationFragment"
+        tools:layout="@layout/fragment_select_location"
+        android:label="Select Location" >
+        <action
+            android:id="@+id/action_selectLocationFragment_to_createReminderFragment"
+            app:destination="@id/createReminderFragment"
+            app:popUpTo="@id/reminderListFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/reminderDetailActivity"
+        android:name="com.allexandresantos.locationreminders.reminders.ReminderDetailActivity"
+        tools:layout="@layout/activity_reminder_detail"
+        android:label="ReminderDetailActivity" >
+        <argument
+            android:name="reminderDataItem"
+            app:argType="com.allexandresantos.locationreminders.reminders.ReminderDataItem" />
+    </activity>
+
+</navigation>
