@@ -20,20 +20,6 @@ import org.mockito.Mockito
 @MediumTest
 class ReminderListFragmentTest {
 
-//    TODO: test the displayed data on the UI.
-//    TODO: add testing for the error messages.
-
-//    @ExperimentalCoroutinesApi
-//    @get:Rule
-//    var mainCoroutineRule = MainCoroutineRule()
-
-//    @get:Rule
-//    var instantExecutorRule = InstantTaskExecutorRule()
-
-//    @Rule
-//    @JvmField
-//    var mActivityTestRule = ActivityTestRule(RemindersActivity::class.java)
-
     @Test
     fun testNavigationToCreateReminderScreen() {
 
