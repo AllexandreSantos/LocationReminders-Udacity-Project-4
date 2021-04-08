@@ -47,7 +47,9 @@
         android:label="ReminderDetailActivity" >
         <argument
             android:name="reminderDataItem"
-            app:argType="com.allexandresantos.locationreminders.reminders.ReminderDataItem" />
+            app:argType="com.allexandresantos.locationreminders.reminders.ReminderDataItem"
+            app:nullable="true"
+            android:defaultValue="@null" />
     </activity>
 
 </navigation>

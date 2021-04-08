@@ -42,7 +42,7 @@ class ReminderDetailActivity : AppCompatActivity() {
     companion object {
         private const val EXTRA_ReminderDataItem = "EXTRA_ReminderDataItem"
 
-        fun newIntent(context: Context, reminderDataItem: ReminderDataItem): Intent {
+        fun newIntent(context: Context, reminderDataItem: ReminderDataItem?): Intent {
             val intent = Intent(context, ReminderDetailActivity::class.java)
             intent.putExtra(EXTRA_ReminderDataItem, reminderDataItem)
             return intent
