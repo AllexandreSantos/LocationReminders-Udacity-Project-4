@@ -21,6 +21,8 @@ is at a specific location. The app will require the user to create an account an
 ## Built With
 This project is built with Android Studio and Kotlin making a good use of:
 * MVVM
+* Unit Tests
+* Integration Tests
 * Live Data
 * Room
 * Data Binding
