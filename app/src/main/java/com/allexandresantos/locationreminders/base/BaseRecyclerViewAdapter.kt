@@ -37,7 +37,6 @@ abstract class BaseRecyclerViewAdapter<T>(private val callback: ((item: T) -> Un
         val item = getItem(position)
         holder.bind(item)
         holder.itemView.setOnClickListener {
-            Log.d("oi", "onBindViewHolder: clicou")
             callback?.invoke(item)
         }
     }

@@ -8,7 +8,7 @@ import com.allexandresantos.locationreminders.data.dto.Result
  */
 interface ReminderDataSource {
     suspend fun getReminders(): Result<List<ReminderDTO>>
-    suspend fun saveReminder(reminder: ReminderDTO)
     suspend fun getReminder(id: String): Result<ReminderDTO>
+    suspend fun saveReminder(reminder: ReminderDTO)
     suspend fun deleteAllReminders()
 }

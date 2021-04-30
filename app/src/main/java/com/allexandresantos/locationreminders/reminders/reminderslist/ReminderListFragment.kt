@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.*
-import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import com.allexandresantos.locationreminders.R
 import com.allexandresantos.locationreminders.authentication.AuthenticationActivity
