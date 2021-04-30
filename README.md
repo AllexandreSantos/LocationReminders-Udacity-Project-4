@@ -15,9 +15,9 @@ is at a specific location. The app will require the user to create an account an
     Add your package name and SHA-1 signing-certificate fingerprint.
     Enable Maps SDK for Android from API restrictions and Save.
     Copy the api key and create a google_maps_api.xml file. Inside this file copy and paste the following code replacing the X's with your API key:
-    <resources>
+    "<resources>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">XXXXXXXXXXXXXXXX</string>
-    </resources>
+    </resources>"
     
 ## Built With
 This project is built with Android Studio and Kotlin making a good use of:
